@@ -1,12 +1,12 @@
 {
   "name": "vue-timeline",
   "version": "0.1.0",
-  "description": "a simple time line for vue2",
-  "author": "Edward wu <trionfo1993@hotmail.com>",
+  "description": "A simple time line for vue2, forked from: https://github.com/mizuka-wu/vue-timeline",
+  "author": "Lucian Filote <lucian.filote@gmail.com>",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/trionfo1993/vue-timeline.git"
+    "url": "https://github.com/lucianovidiufilote/vue-timeline.git"
   },
   "license": "BSD",
   "scripts": {
