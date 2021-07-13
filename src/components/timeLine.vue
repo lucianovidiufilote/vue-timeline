@@ -6,8 +6,8 @@
       </div>
 
       <div class="timeline-content">
-        <h2 v-html="point.title"></h2>
-        <p v-html="point.text"></p>
+        <h2 v-html="point.title" :class="point.titleClass"></h2>
+        <p v-html="point.text" :class="point.textClass"></p>
         <a :href="point.linkUrl"
            class="read-more"
            target="_blank"
