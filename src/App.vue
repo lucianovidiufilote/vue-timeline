@@ -18,7 +18,8 @@
           text: 'first post', // *时间点内容
           linkUrl: 'https://www.google.com', // *链接url 留空则不显示按钮
           linkText: 'Read detail', // 按钮显示内容 默认为Read more
-          date: '2017-1-1' // 时间点
+          date: '2017-1-1', // 时间点,
+          dateClass: 'text-black'
         }, {
           pointColor: 'yellow', // *关键点颜色 可选red yellow green
           img: '1', // 图片地址 可留空

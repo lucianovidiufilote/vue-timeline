@@ -14,7 +14,7 @@
            v-if="point.linkUrl"
            v-html="point.linkText!=undefined?point.linkText:'Read more'"
         ></a>
-        <span v-if="point.date" class="date" v-text="point.date"></span>
+        <span v-if="point.date" class="date}" :class="point.dateClass" v-text="point.date"></span>
       </div>
     </div>
   </section>
