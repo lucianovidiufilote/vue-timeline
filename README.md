@@ -2,7 +2,7 @@
 
 # Vue-timeline
 
-It just a simple time line component for vue 2.0  
+It just a simple time line component for vue 2.0
 source code from [click me!](http://www.helloweba.com/view-blog-285.html)
 
 * Data from json
@@ -17,7 +17,7 @@ source code from [click me!](http://www.helloweba.com/view-blog-285.html)
 * vue2.0.1+
 * bootstrap3
 
-That's all. 
+That's all.
 
 
 ## Installation
@@ -35,7 +35,8 @@ points: [
             text: 'first post', // important! the content you want show *时间点内容
             linkUrl: 'https://www.google.com', // url for read more 链接url 留空则不显示按钮
             linkText: 'Read detail', // show what in read for more button 按钮显示内容 默认为Read more
-            date: '2017-1-1' // time of the point 时间点
+            date: '2017-1-1' // time of the point 时间点,
+            dateClass: 'text-white' //class that will be applied to date container
           }
         ]
 ```
