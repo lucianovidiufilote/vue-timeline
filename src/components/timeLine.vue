@@ -1,7 +1,7 @@
 <template>
   <section class="timeline-container timeline">
     <div @click="changeCurrentTimePoint(point)" v-for="point in points" class="timeline-block">
-      <div class="timeline-img" :class="point.pointColor===undefined?'red':point.pointColor">
+      <div class="timeline-img" :class="point.pointColor">
         <img v-if="point.img" :src="getImg(point.img)" alt="">
       </div>
 
@@ -129,7 +129,7 @@ Main components
 }
 
 .timeline-img.red {
-  background: #c03b44;
+  background: #ea5959;
 }
 
 .timeline-img.yellow {
