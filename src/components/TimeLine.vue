@@ -320,6 +320,7 @@ a.read-more:hover {
 </style>
 <script>
 export default {
+  name: 'TimeLine',
   props: {
     points: {
       required: true

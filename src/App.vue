@@ -1,44 +1,16 @@
 <template>
   <div id="app">
-    <timeLine :points="points"></timeLine>
+    <TimeLine :points="points"></TimeLine>
   </div>
 </template>
 
 <script>
-import timeLine from './components/timeLine.vue'
+import TimeLine from './components/TimeLine.vue'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      points: [{
-        pointColor: 'red', // *关键点颜色 可选red yellow green
-        img: 'http://www.jikexueyuan.com/event/static/images/bootstrap/bootstrap-logo.png', // 图片地址 可留空
-        title: 'hello world', // *时间点标题
-        titleClass: ['text-black'],
-        text: 'first post', // *时间点内容
-        textClass: ['text-black'],
-        linkUrl: 'https://www.google.com', // *链接url 留空则不显示按钮
-        linkText: 'Read detail', // 按钮显示内容 默认为Read more
-        date: '2017-1-1', // 时间点,
-        dateClass: ['text-black']
-      }, {
-        pointColor: 'yellow', // *关键点颜色 可选red yellow green
-        img: '1', // 图片地址 可留空
-        title: 'hello world', // *时间点标题
-        text: 'first post' // *时间点内容
-      }, {
-        pointColor: 'green', // *关键点颜色 可选red yellow green
-        title: 'hello world', // *时间点标题
-        text: 'first post', // *时间点内容
-        linkUrl: '#', // *链接url 留空则不显示按钮
-        date: '2017-1-1' // 时间点
-      }
-      ]
-    }
-  },
   components: {
-    timeLine
+    TimeLine
   }
 }
 </script>
