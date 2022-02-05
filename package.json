@@ -1,6 +1,7 @@
 {
   "name": "vue-timeline-customizable",
-  "version": "0.1.9",
+  "main": "src/index.js",
+  "version": "0.1.10",
   "description": "A simple time line for vue2, forked from: https://github.com/mizuka-wu/vue-timeline",
   "author": "Lucian Filote <lucian.filote@gmail.com>",
   "private": false,
