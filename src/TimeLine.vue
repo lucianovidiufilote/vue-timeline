@@ -161,6 +161,10 @@ Main components
   background: #3fb9f1;
 }
 
+.timeline-img.gray {
+  background: #b6b6b6;
+}
+
 @media only screen and (min-width: 1170px) {
   .timeline-img {
     width: 60px;
