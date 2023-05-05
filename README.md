@@ -39,6 +39,7 @@ points: [
             linkText: 'Read detail', // show what in read for more button 按钮显示内容 默认为Read more
             date: '2017-1-1' // time of the point 时间点,
             dateClass: ['text-black'] //class that will be applied to date container
+            contentClass: ['text-black'] //class that will be applied to content container
           }
         ]
 ```
