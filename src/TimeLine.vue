@@ -1,20 +1,41 @@
 <template>
-  <section class="timeline-container timeline">
-    <div @click="changeCurrentTimePoint(point)" v-for="point in points" class="timeline-block">
-      <div class="timeline-img" :class="point.pointColor">
-        <img v-if="point.img" :src="getImg(point.img)" alt="">
+  <section
+    class="timeline-container timeline">
+    <div
+      v-for="point in points"
+      @click="changeCurrentTimePoint(point)"
+      class="timeline-block">
+      <div
+        class="timeline-img"
+        :class="point.pointColor">
+        <img
+          v-if="point.img"
+          :src="getImg(point.img)"
+          alt="">
       </div>
 
-      <div class="timeline-content">
-        <h2 v-html="point.title" :class="point.titleClass"></h2>
-        <p v-html="point.text" :class="point.textClass"></p>
-        <a :href="point.linkUrl"
-           class="read-more"
-           target="_blank"
-           v-if="point.linkUrl"
-           v-html="point.linkText!=undefined?point.linkText:'Read more'"
-        ></a>
-        <span v-if="point.date" class="date" :class="point.dateClass" v-html="point.date"></span>
+      <div
+        :class="point.contentClass"
+        class="timeline-content">
+        <h2
+          v-html="point.title"
+          :class="point.titleClass"></h2>
+        <p
+          v-html="point.text"
+          :class="point.textClass"></p>
+        <a
+          v-if="point.linkUrl"
+          :href="point.linkUrl"
+          class="read-more"
+          target="_blank"
+          v-html="point.linkText!=undefined?point.linkText:'Read more'">
+        </a>
+        <span
+          v-if="point.date"
+          class="date"
+          :class="point.dateClass"
+          v-html="point.date">
+        </span>
       </div>
     </div>
   </section>
